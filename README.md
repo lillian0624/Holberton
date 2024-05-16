@@ -1,5 +1,6 @@
 # Holberton
- <img width="1144" alt="image" src="https://github.com/lillian0624/Holberton/assets/87347776/502c5272-3c40-431c-af2c-a5633e8cafdb">
+ <img width="1158" alt="image" src="https://github.com/lillian0624/Holberton/assets/87347776/7ecd8418-fdf2-4ca1-8956-33448a9c1ded">
+
 
 
 Welcome to my website repository! This repository contains the source code for my personal website, where I showcase my projects, share my experiences, and provide information about myself.
