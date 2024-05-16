@@ -9,21 +9,35 @@
 
 </head>
 
-
-
 <body>
-    <header>
-        <p>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0"
+        nonce="76vR0Ovm"></script>
 
+
+    <header>
+
+
+        <p class="logo">
             <a href="https://apply.holbertonschool.com">
-                <img src="https://apply.holbertonschool.com/holberton-logo.png">
+                <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton Logo">
             </a>
         </p>
+
+        <div class="share-button">
+            <div class="fb-share-button" data-href="http://127.0.0.1:5500/index.html" data-layout="" data-size=""><a
+                    target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">Share</a>
+            </div>
+        </div>
+
+
         <ul>
             <li><a href="index.html" class="current">Homepage</a></li>
-            <li><a href="About Me">About Me</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
             <li><a href="tweets.html">My Tweets</a></li>
-            <li><a href="Why I choose Holberton">Why I choose Holberton</a></li>
+            <li><a href="why.html">Why I choose Holberton</a></li>
         </ul>
     </header>
 
@@ -31,16 +45,42 @@
         <article>
             <h1>Welcome to My Website!</h1>
             <p>This is the homepage of my website. Feel free to explore!</p>
+            <h2>About This Website</h2>
+            <img id="smart_thumbnail" class="small"
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--oTCqhU8T--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/kfyk4ne0vb187mhh1o95.jpg"
+                alt="Thumbnail">
+
+            <p>This website is created to showcase my projects and share my experiences.</p>
+            <h3>Goals</h3>
+            <p>The main goal of this website is to provide information about my skills and achievements.</p>
+            <h3>Features</h3>
+            <p>The website includes a portfolio section, a blog, and a contact form.</p>
+            <h2>Latest Updates</h2>
+            <p>Stay tuned for the latest news and updates!</p>
         </article>
 
         <aside>
-            <p>placeholder to add comment thread later</p>
+            <div id="disqus_thread"></div>
+            <script>
+                (function () {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://lillianyang.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
         </aside>
     </main>
 
     <footer>
         <p>Made by Li Yang for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
     </footer>
+    <script src="behavior.js">
+
+    </script>
+
 </body>
 
 </html>
